@@ -1,0 +1,283 @@
+.App {
+  text-align: left;
+  height: 100%;
+  display:inline;
+  overflow:hidden;
+}
+
+.App-header{
+  background-color: rgb(0, 0, 0, .2);
+}
+
+.App-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  height: 80px;
+}
+/* 
+.Portfolio{
+  height:100vh;
+  width: 100%;
+} */
+
+/* Scrollbar */
+
+.Scrollbar {
+  display: inline-block;
+  position:absolute;
+  top:50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  display:block;
+  padding: 10px 0px 10px;
+  font-size: 18px;
+  background-color:transparent;
+  border:none;
+  color:#C0C0C0;
+}
+
+.content:hover {
+  color:white;
+  transition: .2s;
+}
+
+.content:focus{
+  outline:none;
+}
+
+/* Contents */
+.display_wrapper{
+  height: 100vh;
+  width: 900px;
+  position:absolute;
+  overflow:hidden;
+  left: 20%;
+}
+
+.display{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  transition:.4s;
+  transition-timing-function: ease-out;
+  height:100%;
+  width:100%;
+  height: 600px;
+  top:14%;
+
+  /* border: 1px solid black; */
+  /* border: 1px solid black; */
+}
+
+.card{
+  min-height:100%;
+  margin-bottom: 100px;
+  flex:1;
+  border-radius: 10px;
+}
+
+.Home{
+  padding-left: 6%;
+}
+
+.Projects {
+  overflow:hidden;
+  /* border: 1px solid black; */
+}
+
+.Skills{
+  background-color: rgb(0, 0, 0, .2);
+}
+
+.Personal{
+  background-color: rgb(0,0,0,.2);
+}
+
+
+
+/* Home */
+
+.Title_header {
+  position: absolute;
+  /* border: 1px solid black; */
+  height: 200px;
+  width: 700px;
+}
+
+.NameCard{
+  position:absolute;
+  top:8%;
+  height: 100%;
+  /* top:30%; */
+  left:200px;
+  color:white;
+  font-size: 55px;
+  width: 500px;
+  padding-right: 20px;
+  /* border: 2px solid black; */
+}
+
+.Name {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.BackCover{
+  position: absolute;
+  height: 220px;
+  width:160px;
+  top: 1%;
+  left: 1%;
+  background-color:white;
+  clip-path: circle(72px at center);
+}
+.ProfilePic{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 220px;
+  width: 160px;
+  clip-path: circle(70px at center);
+  border: 2px solid white;
+}
+
+.AboutMe {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  padding-left: 10%;
+  font-size: 18px;
+  font-weight: 1000;
+  height: 400px;
+  width: 600px;
+  color:white;
+  text-align: center;
+}
+
+.slider{
+  display:flex;
+  height:90%;
+  width:100%;
+  transition-timing-function: ease-out;
+  transition:.5s;
+}
+
+.slide{
+  flex:1;
+  height: 100%;
+  width: 100%;
+  background-color:blue ;
+  transition: 1s;
+  margin-right: 10%;
+  min-width:100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  background-size: cover;
+}
+
+.slide1 {
+  background-image: url(../img/ToonFlix.png);
+}
+
+.slide2{
+  background-image: url(../img/ColorGame.png);
+}
+
+.slide3 {
+  background-image: url(../img/OmniChat.png);
+}
+
+.slidecursor {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  /* border: 1px solid black; */
+  width:100%;
+  bottom:0;
+  height: 10%;
+}
+
+.cursor {
+  /* width:200px; */
+  /* padding:0 50px;
+  margin: 0 100px; */
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font: 16px;
+  font-weight: 400;
+  
+}
+
+.prev:focus{
+  outline:none;
+}
+.next:focus{
+  outline:none;
+}
+
+.prev {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.next{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+/* Skills */
+.row{
+  top: -5%;
+  display:flex;
+  justify-content: space-between;
+  margin: 12%;
+}
+
+.skill_icon{
+  max-height:110px;
+  max-width:120px;
+  flex:1;
+}
+
+/* Personal */
+
+.grid-container {
+  display: grid;
+  padding: 10px;
+  /* justify-items: stretch; */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: stretch;
+  height:100%;
+  border: none;
+
+
+}
+
+.grid-item {
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 14px;
+  color:white;
+  text-align: center;
+}
+
+
+/* .skill_icon:not(:last-child){
+  border-right: 1px solid black;
+} */
+
+
+
+
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
