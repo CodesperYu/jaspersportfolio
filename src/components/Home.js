@@ -18,12 +18,14 @@ function Home(props) {
 				</table>
 			</div>
 
-			<p className="AboutMe">Hello! My name is Jasper Yu and I am born and raised in San Francisco. 
-				We live one life and and it's up to us to make it as meaningful as possible. I 
-				decided to pursue software engineering and enjoy the puzzle solving aspect of it!
+			<p className="AboutMe">Hello, my name is Jasper Yu and I am 
+			a self-taught programmer and an ex-poker player. Although I loved my previous job 
+			as a professional poker player, I did not feel like I was making an impact and studied programming 
+			to find new opportunities. I love the problem solving aspect of coding and love seeing
+			my projects come together. Please check out some of the projects I have done!
 			</p>
 
-			
+
 		</div>
 	)
 }

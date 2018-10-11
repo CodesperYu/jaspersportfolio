@@ -43,7 +43,11 @@
   transition: .2s;
 }
 
-.content:focus{
+/* .content:focus{
+  outline:none;
+} */
+
+button:focus{
   outline:none;
 }
 
@@ -95,6 +99,8 @@
   background-color: rgb(0,0,0,.2);
 }
 
+.Contacts{
+}
 
 
 /* Home */
@@ -132,6 +138,7 @@
   background-color:white;
   clip-path: circle(72px at center);
 }
+
 .ProfilePic{
   position: absolute;
   top: 1%;
@@ -144,7 +151,7 @@
 
 .AboutMe {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 1%;
   padding-left: 10%;
   font-size: 18px;
@@ -154,6 +161,8 @@
   color:white;
   text-align: center;
 }
+
+/* projects */
 
 .slider{
   display:flex;
@@ -167,25 +176,97 @@
   flex:1;
   height: 100%;
   width: 100%;
-  background-color:blue ;
   transition: 1s;
   margin-right: 10%;
   min-width:100%;
   border-radius: 10px;
   box-shadow: 1px 1px 5px black;
   background-size: cover;
+  overflow:hidden;
 }
 
 .slide1 {
   background-image: url(../img/ToonFlix.png);
+  background-position: center;
+  height:100%;
+  z-index:1;
 }
 
 .slide2{
   background-image: url(../img/ColorGame.png);
+  background-position-x:-1200px;
+  height:100%;
 }
 
 .slide3 {
   background-image: url(../img/OmniChat.png);
+  /* background-position-x: 2px; */
+  height:100%;
+}
+
+.about{
+  position:relative;
+  background-color:black;
+  color:white;
+  height:100%;
+  z-index: 2;
+  opacity:.9;
+  transition:.6s;
+  /* transform:translateY(-100%); */
+}
+
+.slide:hover .about{
+  transform:translateY(-100%);
+  transition:.4s;
+}
+
+.description {
+  font-size: 16px;
+  padding: 10px 40px;
+}
+
+
+.tags_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tags_container{
+  font-size: 25px;
+  flex:1;
+  background-color:grey;
+  border-radius: 2px;
+  margin: 10px;
+  vertical-align: middle;
+  position:relative;
+  height: 50px;
+  flex-basis:15%;
+}
+
+.tags{
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  top:32%;
+}
+
+.description{
+  position:relative;
+  /* margin-top:25%; */
+  padding: 6% 15%;
+}
+
+.button_container{
+  position:absolute;
+  left:50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.button_toonflix{
+  transition: .2s;
 }
 
 .slidecursor {
@@ -256,8 +337,6 @@
   align-items: stretch;
   height:100%;
   border: none;
-
-
 }
 
 .grid-item {
@@ -267,8 +346,102 @@
   font-size: 14px;
   color:white;
   text-align: center;
+  border:none;
 }
 
+.grid-item:first-child{
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.grid-item:nth-child(2){
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.grid-item:nth-child(3){
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.grid-item:last-child{
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+
+
+
+/* Contact */
+
+.contact_title{
+  position: relative;
+  font-size: 45px;
+  letter-spacing: 2px;
+  color: white;
+  height:40%;
+  top:20%;
+  text-align:center;
+}
+
+.info{
+  height: 40vh;
+  position: relative;
+  top: 21%;
+  border-radius: 10px;
+  background-color: rgb(0,0,0,.8);
+}
+
+.contact_info{
+  text-align:center;
+}
+
+.linkedin{
+  color:white;
+}
+
+.github{
+  color:white;
+}
+
+.contact_email{
+  color:white;
+  text-align: center;
+  font-size:15px;
+  top: 100px;
+  margin-bottom: 20px;
+}
+
+.contact_icon{
+  left: 0 !important;
+}
+
+.button_linkedin{
+  background-color: rgb(65, 123, 247);
+  transition: .2s;
+}
+
+.button_github{
+  background-color: rgb(102, 98, 98);
+  transition: .2s;
+}
+
+.button_github:hover, 
+.button_linkedin:hover, 
+.button_toonflix:hover, 
+.button_colorgame:hover{
+  transform: translateY(-2px);
+  box-shadow: 1px 1px 0px 0.4 white;
+  transition: .2s;
+}
+
+.redirect{
+  height: 60px;
+  width: 250px;
+  position:relative;
+  border-radius: 15px;
+  border: none;
+  margin: 20px;
+}
 
 /* .skill_icon:not(:last-child){
   border-right: 1px solid black;

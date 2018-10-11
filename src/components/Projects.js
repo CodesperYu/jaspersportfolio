@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-// import ToonFlix from '../img/ToonFlix.png';
-// import ColorGame from '../img/ColorGame.png';
-// import Omni from '../img/OmniChat.png';
-
+import projectData from './projectData.js';
 
 class Projects extends Component {
 	constructor(props){
@@ -37,19 +34,188 @@ class Projects extends Component {
 				<div className="slider" style={{
 					'transform': `translateX(-${curr*110}%)`
 				}}>
-					<div className="slide slide1">
+				<div className="slide">
+					<div className="slide1"></div>
+
+						<div className="about">
+							<div className="tags_flex">
+								<div className="tags_container">
+									<div className="tags">HTML</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Sass</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">BEM</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Node</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Javascript</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Heroku</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Animation</div>
+								</div>
+							</div>
+
+							<div className="description">
+								<h3>Toonflix</h3>
+								<p>I was inspired to create Toonflix as I love animation and by a book about web design 
+									called <u>Don't Make Me Think</u> by Steven Krug. It influenced how I laid out my page to always think
+									about whether the order or design is intuitive. My goal with this website was to make sure
+									my audience does not 'have to think'.
+								</p>
+							</div>
+
+							<div className="button_container"> 
+								<button className="button_toonflix redirect" onClick = {
+										()=>window.open("https://boiling-badlands-77858.herokuapp.com/")
+								}
+								>Website</button>
+							</div>
+
+						</div>
 					</div>
-					<div className="slide slide2">
+					
+					<div className="slide">
+						<div className="slide2"></div>
+						<div className="about">
+							<div className="tags_flex">
+								<div className="tags_container">
+									<div className="tags">HTML</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">CSS</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Javascript</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Heroku</div>
+								</div>
+								<div className="tags_container">
+									<div className="tags">Game</div>
+								</div>
+							</div>
+							<div className="description">
+								<h3>Color Game</h3>
+								<p> This was a project I wanted to work on because I wanted to create a game and also
+									improve my Javascript skills. When I started learning how to code, I jumped straight into React
+									and that has stripped me away from having a deeper understanding of the language behind 
+									the framework/library. By improving my Javascript fundamentals, it would also deepen my 
+									understanding of React and also allow me to adapt quickly future Javascript libraries and 
+									frameworks.
+								</p>
+							</div>
+
+							<div className="button_container"> 
+								<button className="button_toonflix redirect" onClick = {
+										()=>window.open("https://rocky-coast-81821.herokuapp.com/")
+								}>Website</button>
+							</div>
+						</div>
+
 					</div>
-					<div className="slide slide3">
+
+				<div className="slide">
+					<div className="slide3"></div>
+					<div className="about">
+						<div className="tags_flex">
+							<div className="tags_container">
+								<div className="tags">HTML</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">CSS</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">Javascript</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">React</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">Redux</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">Jest</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">React Router</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">Bootstrap</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">Websocket</div>
+							</div>
+							<div className="tags_container">
+								<div className="tags">API</div>
+							</div>
+						</div>
+
+						<div className="description">
+							<h3>Omnichat</h3>
+							<p> This was a project I wanted to work on because I wanted to create a game and also
+								improve my Javascript skills. When I started learning how to code, I jumped straight into React
+								and that has stripped me away from having a deeper understanding of the language behind 
+								the framework/library. By improving my Javascript fundamentals, it would also deepen my 
+								understanding of React and also allow me to adapt quickly future Javascript libraries and 
+								frameworks.
+							</p>
+						</div>
+
+						<div className="button_container"> 
+							<button className="button_toonflix redirect" onClick = {
+									()=>window.open("http://omnipotent-onions.herokuapp.com/")
+							}>Website</button>
+						</div>
 					</div>
 				</div>
+
+			</div>
+
 				<div className="slidecursor">
 					<button className="cursor prev" onClick={this.prevSlide.bind(this)}> Previous </button>
 					<button className="cursor next" onClick={this.nextSlide.bind(this)}> Next </button>
 				</div>
+
 			</div>
 		)
 	}	
 }
 export default Projects;
+
+
+						{/* {
+							projectData.map((project, index) => {
+								return (
+									<div className="slide">
+										<div className={"slide" + index+1}></div>
+										<div className={'about'+ (index+1)}>
+											<div className="tags_flex">
+												{
+													project.tags.map((tag, index) => {
+														return <div className="tags_container">
+															<div className="tags">{tag}</div>
+														</div>
+													})
+												}
+											</div>
+											<div className="description">
+												<p>{project.description}</p>
+											</div>
+											<div className="button_container">
+												<button className={project.class} onClick = {
+													()=>window.open("https://boiling-badlands-77858.herokuapp.com/")
+												}> Website
+												</button>
+											</div>
+										</div>
+									)
+							})
+						}
+				</div> */}

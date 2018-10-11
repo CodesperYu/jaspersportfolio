@@ -3,7 +3,7 @@ import Home from '../components/Home';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import Personal from '../components/Personal';
-import Contact from '../components/Contact';
+import Contacts from '../components/Contacts';
 // import '..semantic-ui-css/semantic.min.css'
 
 class Portfolio extends Component {
@@ -69,6 +69,7 @@ class Portfolio extends Component {
 						<Projects/>
 						<Skills/>
 						<Personal/>
+						<Contacts/>
 					</div>
 				</div> 
 			</div>
