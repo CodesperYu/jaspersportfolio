@@ -13,11 +13,7 @@
   /* animation: App-logo-spin infinite 20s linear; */
   height: 80px;
 }
-/* 
-.Portfolio{
-  height:100vh;
-  width: 100%;
-} */
+
 
 /* Scrollbar */
 
@@ -43,17 +39,14 @@
   transition: .2s;
 }
 
-/* .content:focus{
-  outline:none;
-} */
-
 button:focus{
   outline:none;
 }
 
 /* Contents */
+
 .display_wrapper{
-  height: 100vh;
+  height: 750px;
   width: 900px;
   position:absolute;
   overflow:hidden;
