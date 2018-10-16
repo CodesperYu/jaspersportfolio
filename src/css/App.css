@@ -100,13 +100,11 @@ button:focus{
   position:absolute;
   top:8%;
   height: 100%;
-  /* top:30%; */
   left:200px;
   color:white;
   font-size: 55px;
   width: 500px;
   padding-right: 20px;
-  /* border: 2px solid black; */
 }
 
 .Name {
@@ -184,7 +182,6 @@ button:focus{
 
 .slide3 {
   background-image: url(../img/OmniChat.png);
-  /* background-position-x: 2px; */
   height:100%;
 }
 
@@ -196,7 +193,6 @@ button:focus{
   z-index: 2;
   opacity:.9;
   transition:.6s;
-  /* transform:translateY(-100%); */
 }
 
 .slide:hover .about{
@@ -238,7 +234,6 @@ button:focus{
 
 .description{
   position:relative;
-  /* margin-top:25%; */
   padding: 6% 15%;
 }
 
@@ -254,20 +249,15 @@ button:focus{
 }
 
 .slidecursor {
-  /* border: 1px solid black; */
   display: flex;
   justify-content:center;
   align-content: center;
-  /* border: 1px solid black; */
   width:100%;
   bottom:0;
   height: 10%;
 }
 
 .cursor {
-  /* width:200px; */
-  /* padding:0 50px;
-  margin: 0 100px; */
   text-align: center;
   background-color: transparent;
   border: none;
@@ -315,7 +305,6 @@ button:focus{
 .grid-container {
   display: grid;
   padding: 10px;
-  /* justify-items: stretch; */
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   align-items: stretch;
@@ -324,7 +313,6 @@ button:focus{
 }
 
 .grid-item {
-  /* background-color: rgba(255, 255, 255, 0.8); */
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 14px;

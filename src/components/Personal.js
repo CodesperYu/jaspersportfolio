@@ -8,10 +8,12 @@ function Personal(props) {
 			<div className="grid-container">
 				{
 					traits.map((trait, index) => {
-						return <div className="grid-item">
+						return (
+							<div className="grid-item" key={index}>
 								<h1>{trait.trait}</h1>
 								<p>{trait.description}</p>
 							</div>
+						)
 					})
 				}
 			</div>

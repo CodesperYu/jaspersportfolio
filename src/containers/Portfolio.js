@@ -11,12 +11,33 @@ class Portfolio extends Component {
 		super();
 		this.state = {
 			card: 'Home',
+			contents: [
+				{
+					name: 'Home',
+					style: 'home icon'
+				}, 
+				{
+					name: 'Projects',
+					style: 'folder open icon'
+				}, 
+				{
+					name: 'Skills',
+					style: 'code branch icon'
+				}, 
+				{
+					name: 'Personal',
+					style: 'user icon'
+				}, 
+				{
+					name: 'Contact',
+					style: 'envelope icon'
+				}
+			],
 			index: 0
 		}
 	}
 
 	changeCard = (e) => {
-		console.log(e.target.value);
 		let content = e.target.value;
 		this.setState({
 			index: content
@@ -26,19 +47,21 @@ class Portfolio extends Component {
 	}
 
   render() {
-		let page;
-		if (this.state.card === 'Home') {
-			page = <Home/>
-		} else if (this.state.card === 'Projects') {
-			page = <Projects/>
-		};
-
-
+		console.log(this.state);
     return (
 			<div className="Portfolio">
-				
 				<div className="Scrollbar">
-					<button id="Home" value="0" className="content" onClick={this.changeCard}>
+					{
+						this.state.contents.map((content, index) => {
+							return (
+								<button id={content.name} value={index} className="content" onClick = {this.changeCard} key={index}>
+									<i className={content.style}></i>
+									{content.name}
+								</button>
+							);
+						})
+					}
+					{/* <button id="Home" value="0" className="content" onClick={this.changeCard}>
 						<i className="home icon"></i>
 						Home
 					</button>
@@ -54,10 +77,10 @@ class Portfolio extends Component {
 						<i className="user icon"></i>
 						Personal
 					</button >
-					<button id="Contacts" value="4" className="content" onClick={this.changeCard}> 
+					<button id="Contact" value="4" className="content" onClick={this.changeCard}> 
 						<i className="envelope icon"></i> 
 						Contact
-					</button>
+					</button> */}
 				</div>
 				<div className="display_wrapper">
 					<div className="display" style={
