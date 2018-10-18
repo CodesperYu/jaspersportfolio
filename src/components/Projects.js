@@ -35,31 +35,19 @@ class Projects extends Component {
 					'transform': `translateX(-${curr*110}%)`
 				}}>
 				<div className="slide">
-					<div className="slide1"></div>
 
+					<div className="slide1"></div>
 						<div className="about">
 							<div className="tags_flex">
-								<div className="tags_container">
-									<div className="tags">HTML</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Sass</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">BEM</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Node</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Javascript</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Heroku</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Animation</div>
-								</div>
+								{
+									projectData[0].tags.map((tag)=> {
+										return (
+											<div className="tags_container">
+												<div className="tags">{tag}</div>
+											</div>
+										)
+									})
+								}
 							</div>
 
 							<div className="description">
@@ -86,19 +74,15 @@ class Projects extends Component {
 						<div className="about">
 							<div className="tags_flex">
 								<div className="tags_container">
-									<div className="tags">HTML</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">CSS</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Javascript</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Heroku</div>
-								</div>
-								<div className="tags_container">
-									<div className="tags">Game</div>
+									{
+										projectData[1].tags.map((tag)=> {
+											return (
+												<div className="tags_container">
+													<div className="tags">{tag}</div>
+												</div>
+											)
+										})
+									}
 								</div>
 							</div>
 							<div className="description">
@@ -125,37 +109,18 @@ class Projects extends Component {
 					<div className="slide3"></div>
 					<div className="about">
 						<div className="tags_flex">
-							<div className="tags_container">
-								<div className="tags">HTML</div>
+								<div className="tags_container">
+									{
+										projectData[2].tags.map((tag)=> {
+											return (
+												<div className="tags_container">
+													<div className="tags">{tag}</div>
+												</div>
+											)
+										})
+									}
+								</div>
 							</div>
-							<div className="tags_container">
-								<div className="tags">CSS</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">Javascript</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">React</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">Redux</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">Jest</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">React Router</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">Bootstrap</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">Websocket</div>
-							</div>
-							<div className="tags_container">
-								<div className="tags">API</div>
-							</div>
-						</div>
 
 						<div className="description">
 							<h3>Omnichat</h3>
@@ -175,7 +140,6 @@ class Projects extends Component {
 						</div>
 					</div>
 				</div>
-
 			</div>
 
 				<div className="slidecursor">
@@ -219,3 +183,43 @@ export default Projects;
 							})
 						}
 				</div> */}
+
+				// {
+				// 	projectData.map((project, index) => {
+				// 		return (
+				// 			<div className="slide">
+				// 				<div className={'slide' + (parseInt(index) + 1)}></div>
+				// 				<div classname="about">
+				// 					<div className="tags_flex">
+				// 						{
+				// 							project.tags.map((tag) => {
+				// 								return (
+				// 									<div className = "tags_container">
+				// 										<div className="tags">{tag}</div>
+				// 									</div>
+				// 								)
+				// 							})
+				// 						}
+				// 					</div>
+
+				// 					<div className='description'>
+				// 						<h3>{project.title}</h3>
+				// 						<p> {project.description}
+				// 						</p>
+				// 					</div>
+
+				// 					<div className="button_container">
+				// 						<button className={project.class} onClick = {
+				// 							()=>window.open({project})
+				// 						}>
+				// 						Website</button>
+				// 					</div>
+
+				// 				</div>
+
+
+
+				// 			</div>
+				// 		)
+				// 	})
+				// }

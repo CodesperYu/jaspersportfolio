@@ -61,26 +61,6 @@ class Portfolio extends Component {
 							);
 						})
 					}
-					{/* <button id="Home" value="0" className="content" onClick={this.changeCard}>
-						<i className="home icon"></i>
-						Home
-					</button>
-					<button id="Projects" value="1" className="content" onClick={this.changeCard}>
-						<i className="folder open icon"></i>
-						Projects
-					</button>
-					<button id="Skills" value="2" className="content" onClick={this.changeCard}>
-						<i className="code branch icon"></i>
-						Skills
-					</button>
-					<button  id="Personal" value="3" className="content" onClick={this.changeCard}>
-						<i className="user icon"></i>
-						Personal
-					</button >
-					<button id="Contact" value="4" className="content" onClick={this.changeCard}> 
-						<i className="envelope icon"></i> 
-						Contact
-					</button> */}
 				</div>
 				<div className="display_wrapper">
 					<div className="display" style={
