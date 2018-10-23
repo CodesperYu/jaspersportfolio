@@ -73,17 +73,15 @@ class Projects extends Component {
 						<div className="slide2"></div>
 						<div className="about">
 							<div className="tags_flex">
-								<div className="tags_container">
-									{
-										projectData[1].tags.map((tag)=> {
-											return (
-												<div className="tags_container">
-													<div className="tags">{tag}</div>
-												</div>
-											)
-										})
-									}
-								</div>
+								{
+									projectData[1].tags.map((tag)=> {
+										return (
+											<div className="tags_container">
+												<div className="tags">{tag}</div>
+											</div>
+										)
+									})
+								}
 							</div>
 							<div className="description">
 								<h3>Color Game</h3>
@@ -109,17 +107,15 @@ class Projects extends Component {
 					<div className="slide3"></div>
 					<div className="about">
 						<div className="tags_flex">
-								<div className="tags_container">
-									{
-										projectData[2].tags.map((tag)=> {
-											return (
-												<div className="tags_container">
-													<div className="tags">{tag}</div>
-												</div>
-											)
-										})
-									}
-								</div>
+								{
+									projectData[2].tags.map((tag)=> {
+										return (
+											<div className="tags_container">
+												<div className="tags">{tag}</div>
+											</div>
+										)
+									})
+								}
 							</div>
 
 						<div className="description">
