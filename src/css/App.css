@@ -177,12 +177,13 @@ button:focus{
 
 .slide2{
   background-image: url(../img/ColorGame.png);
-  background-position-x:-1200px;
+  background-position: center;
   height:100%;
 }
 
 .slide3 {
-  background-image: url(../img/OmniChat.png);
+  background-image: url(../img/OmniChatBlack.png);
+  background-position: center;
   height:100%;
 }
 
