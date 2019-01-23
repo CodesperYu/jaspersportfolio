@@ -169,14 +169,14 @@ button:focus{
 }
 
 .slide1 {
-  background-image: url(../img/ToonFlix.png);
+  background-image: url(../img/Juicebox.png);
   background-position: center;
   height:100%;
   z-index:1;
 }
 
 .slide2{
-  background-image: url(../img/ColorGame.png);
+  background-image: url(../img/ToonFlix.png);
   background-position: center;
   height:100%;
 }
@@ -402,7 +402,7 @@ button:focus{
 .button_github:hover, 
 .button_linkedin:hover, 
 .button_toonflix:hover, 
-.button_colorgame:hover{
+.button_juicebox:hover{
   transform: translateY(-2px);
   box-shadow: 1px 1px 0px 0.4 white;
   transition: .2s;

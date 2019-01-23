@@ -35,7 +35,6 @@ class Projects extends Component {
 					'transform': `translateX(-${curr*110}%)`
 				}}>
 				<div className="slide">
-
 					<div className="slide1"></div>
 						<div className="about">
 							<div className="tags_flex">
@@ -49,26 +48,21 @@ class Projects extends Component {
 									})
 								}
 							</div>
-
 							<div className="description">
-								<h3>Toonflix</h3>
-								<p>I was inspired to create Toonflix as I love animation and by a book about web design 
-									called <u>Don't Make Me Think</u> by Steven Krug. It influenced how I laid out my page to always think
-									about whether the order or design is intuitive. My goal with this website was to make sure
-									my audience does not 'have to think'.
+								<h3>JuiceBox</h3>
+								<p> 
+									A group music listening application where people can hang out, listen to music, and chill.
+									This application features real time chatrooms, nofitications, and music playtime where users 
+									can invite friends or stangers to their room and share the music they love.
 								</p>
 							</div>
-
 							<div className="button_container"> 
-								<button className="button_toonflix redirect" onClick = {
-										()=>window.open("https://boiling-badlands-77858.herokuapp.com/")
-								}
-								>Website</button>
+								<button className="button_juicebox redirect" onClick = {
+										()=>window.open("https://juicebox.dj/")
+								}>Website</button>
 							</div>
-
 						</div>
 					</div>
-					
 					<div className="slide">
 						<div className="slide2"></div>
 						<div className="about">
@@ -84,20 +78,19 @@ class Projects extends Component {
 								}
 							</div>
 							<div className="description">
-								<h3>Color Game</h3>
-								<p> This was a project I wanted to work on because I wanted to create a game and also
-									improve my Javascript skills. When I started learning how to code, I jumped straight into React
-									and that has stripped me away from having a deeper understanding of the language behind 
-									the framework/library. By improving my Javascript fundamentals, it would also deepen my 
-									understanding of React and also allow me to adapt quickly future Javascript libraries and 
-									frameworks.
+								<h3>Toonflix</h3>
+								<p>I was inspired to create Toonflix as I love animation and by a book about web design 
+									called <u>Don't Make Me Think</u> by Steven Krug. It influenced how I laid out my page to always think
+									about whether the order or design is intuitive. My goal with this website was to make sure
+									my audience does not 'have to think'.
 								</p>
 							</div>
 
 							<div className="button_container"> 
 								<button className="button_toonflix redirect" onClick = {
-										()=>window.open("https://rocky-coast-81821.herokuapp.com/")
-								}>Website</button>
+										()=>window.open("https://boiling-badlands-77858.herokuapp.com/")
+								}
+								>Website</button>
 							</div>
 						</div>
 
