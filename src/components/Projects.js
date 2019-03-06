@@ -47,7 +47,7 @@ class Projects extends Component {
 								}
 							</div>
 							<div className="description">
-								<h3>JuiceBox</h3>
+								<h3>Juicebox</h3>
 								<p> 
 									A group music listening application where people can hang out, listen to music, and chill.
 									This application features real time chatrooms, nofitications, and music playtime where users 
