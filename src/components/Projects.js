@@ -15,7 +15,6 @@ class Projects extends Component {
 		if(slide < 2) {
 			this.setState({currSlide: slide + 1});
 		}
-		console.log(this.state.currSlide);
 	}
 
 	prevSlide() {
@@ -23,7 +22,6 @@ class Projects extends Component {
 		if(slide > 0) {
 			this.setState({currSlide: slide - 1});
 		}
-		console.log(this.state.currSlide);
 	}
 
 	render(){
