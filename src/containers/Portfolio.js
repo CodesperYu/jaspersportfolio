@@ -65,7 +65,7 @@ class Portfolio extends Component {
 				<div className="display_wrapper">
 					<div className="display" style={
 						{
-							'transform': `translateY(-${this.state.index*117}%)`
+							'transform': `translateY(-${this.state.index*700}px)`
 						}
 					}>
 						<Home/>
