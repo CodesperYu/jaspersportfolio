@@ -89,8 +89,8 @@ button:focus{
 
 .Home {
   display: grid;
-  border: 1px solid black;
   grid-template: repeat(3, 1fr)/ repeat(4, 1fr);
+  background-color: rgb(0, 0, 0, .2);
 }
 
 .NameCard {
