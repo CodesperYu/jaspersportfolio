@@ -1,6 +1,4 @@
 body {
-  min-height: 920px;
-  min-width: 1200px;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -11,7 +9,6 @@ body {
     rgba(0, 47, 75, .5),
     rgba(220, 66, 37, .5)),
     url(../img/bridge.jpg);
-  background-size: 2800px 1200px;
   background-repeat: no-repeat;
   background-attachment:fixed;
   /* position: fixed; */

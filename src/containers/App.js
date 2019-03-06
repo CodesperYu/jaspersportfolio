@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import logo from '../JYLarge.png';
-import '../css/App.css';
+import React, { Component } from 'react'
+import logo from '../JYLarge.png'
+import '../css/App.css'
+import '../css/slides.css'
 
-import Portfolio from './Portfolio';
+import Portfolio from './Portfolio'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <div className="App">
         <header className="App-header">
@@ -15,8 +16,8 @@ class App extends Component {
           <Portfolio/>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

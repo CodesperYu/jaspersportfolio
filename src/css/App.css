@@ -1,8 +1,8 @@
 /* App */
 .App {
   text-align: left;
-  display:inline;
-  overflow:hidden;
+  display: inline;
+  overflow: hidden;
 }
 
 .App-header{
@@ -13,7 +13,6 @@
 .App-logo {
   height: 80px;
 }
-
 
 /* Scrollbar */
 
@@ -48,12 +47,14 @@ button:focus{
 .display_wrapper{
   height: 750px;
   width: 900px;
-  position:absolute;
-  overflow:hidden;
-  left: 20%;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.display{
+.display {
   display: flex;
   flex-direction: column;
   position:absolute;
@@ -65,15 +66,11 @@ button:focus{
   top:14%;
 }
 
-.card{
+.card {
   min-height:100%;
   margin-bottom: 100px;
   flex:1;
   border-radius: 10px;
-}
-
-.Home{
-  padding-left: 6%;
 }
 
 .Projects {
@@ -84,210 +81,62 @@ button:focus{
   background-color: rgb(0, 0, 0, .2);
 }
 
-.Personal{
+.Personal {
   background-color: rgb(0,0,0,.2);
 }
 
-
 /* Home */
 
-.Title_header {
-  position: absolute;
-  height: 200px;
-  width: 700px;
+.Home {
+  display: grid;
+  border: 1px solid black;
+  grid-template: repeat(3, 1fr)/ repeat(4, 1fr);
 }
 
-.NameCard{
-  position:absolute;
-  top:8%;
+.NameCard {
+  display: grid;
+  grid-template-rows: 2;
+  font-size: 56px;
+  grid-column: 2 / 5;
+  color: white;
+  justify-items: left;
+}
+
+.NameCard__Container {
+  display:flex;
   height: 100%;
-  left:200px;
-  color:white;
-  font-size: 55px;
-  width: 500px;
-  padding-right: 20px;
+  width: 100%;
 }
 
-.Name {
+.NameCard__Name {
+  text-align: left;
+  align-self: flex-end;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
 }
 
-.BackCover{
-  position: absolute;
-  height: 220px;
-  width:160px;
-  top: 1%;
-  left: 1%;
-  background-color:white;
-  clip-path: circle(72px at center);
+.NameCard__Occupation {
+  height: 100%;
+  width: 100%;
+}
+
+.ProfilePic {
+  grid-column: 1;
+  align-self: end;
 }
 
 .ProfilePic{
-  position: absolute;
-  top: 1%;
-  left: 1%;
-  height: 220px;
-  width: 160px;
-  clip-path: circle(70px at center);
+  clip-path: circle(80px at center);
   border: 2px solid white;
 }
 
 .AboutMe {
-  position: absolute;
-  top: 40%;
-  left: 1%;
-  padding-left: 10%;
-  font-size: 18px;
-  font-weight: 1000;
-  height: 400px;
-  width: 600px;
   color:white;
   text-align: center;
+  padding: 5% 5%;
+  font-size: 22px;
+  letter-spacing: .2px;
+  grid-area: 2/1/5/5;
 }
-
-/* projects */
-
-.slider{
-  display:flex;
-  height:90%;
-  width:100%;
-  transition-timing-function: ease-out;
-  transition:.5s;
-}
-
-.slide{
-  flex:1;
-  height: 100%;
-  width: 100%;
-  transition: 1s;
-  margin-right: 10%;
-  min-width:100%;
-  border-radius: 10px;
-  box-shadow: 1px 1px 5px black;
-  background-size: cover;
-  overflow:hidden;
-}
-
-.slide1 {
-  background-image: url(../img/Juicebox.png);
-  background-position: center;
-  height:100%;
-  z-index:1;
-}
-
-.slide2{
-  background-image: url(../img/ToonFlix.png);
-  background-position: center;
-  height:100%;
-}
-
-.slide3 {
-  background-image: url(../img/OmniChatBlack.png);
-  background-position: center;
-  height:100%;
-}
-
-.about{
-  position:relative;
-  background-color:black;
-  color:white;
-  height:100%;
-  z-index: 2;
-  opacity:.9;
-  transition:.6s;
-}
-
-.slide:hover .about{
-  transform:translateY(-100%);
-  transition:.4s;
-}
-
-.description {
-  font-size: 16px;
-  padding: 10px 40px;
-}
-
-
-.tags_flex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-.tags_container{
-  font-size: 25px;
-  flex:1;
-  background-color:grey;
-  border-radius: 2px;
-  margin: 10px;
-  vertical-align: middle;
-  position:relative;
-  height: 50px;
-  flex-basis:15%;
-}
-
-.tags{
-  text-align: center;
-  vertical-align: middle;
-  position: absolute;
-  width: 100%;
-  top:32%;
-}
-
-.description{
-  position:relative;
-  padding: 6% 15%;
-}
-
-.button_container{
-  position:absolute;
-  left:50%;
-  bottom: 10%;
-  transform: translateX(-50%);
-}
-
-.button_toonflix{
-  transition: .2s;
-}
-
-.slidecursor {
-  display: flex;
-  justify-content:center;
-  align-content: center;
-  width:100%;
-  bottom:0;
-  height: 10%;
-}
-
-.cursor {
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  color: white;
-  font: 16px;
-  font-weight: 400;
-  
-}
-
-.prev:focus{
-  outline:none;
-}
-.next:focus{
-  outline:none;
-}
-
-.prev {
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-
-.next{
-  flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: 0;
-}
-
 /* Skills */
 .row{
   top: -5%;

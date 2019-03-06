@@ -1,0 +1,142 @@
+/* projects */
+
+.slider{
+  display:flex;
+  height:90%;
+  width:100%;
+  transition-timing-function: ease-out;
+  transition:.5s;
+}
+
+.slide{
+  flex:1;
+  height: 100%;
+  width: 100%;
+  transition: 1s;
+  margin-right: 10%;
+  min-width:100%;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px black;
+  background-size: cover;
+  overflow:hidden;
+}
+
+.slide1 {
+  background-image: url(../img/Juicebox.png);
+  background-position: center;
+  height:100%;
+  z-index:1;
+}
+
+.slide2{
+  background-image: url(../img/ToonFlix.png);
+  background-position: center;
+  height:100%;
+}
+
+.slide3 {
+  background-image: url(../img/OmniChatBlack.png);
+  background-position: center;
+  height:100%;
+}
+
+.about{
+  position:relative;
+  background-color:black;
+  color:white;
+  height:100%;
+  z-index: 2;
+  opacity:.9;
+  transition:.6s;
+}
+
+.slide:hover .about{
+  transform:translateY(-100%);
+  transition:.4s;
+}
+
+.description {
+  font-size: 16px;
+  padding: 10px 40px;
+}
+
+
+.tags_flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.tags_container{
+  font-size: 25px;
+  flex:1;
+  background-color:grey;
+  border-radius: 2px;
+  margin: 10px;
+  vertical-align: middle;
+  position:relative;
+  height: 50px;
+  flex-basis:15%;
+}
+
+.tags{
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  width: 100%;
+  top:32%;
+}
+
+.description{
+  position:relative;
+  padding: 6% 15%;
+}
+
+.button_container{
+  position:absolute;
+  left:50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+}
+
+.button_toonflix{
+  transition: .2s;
+}
+
+.slidecursor {
+  display: flex;
+  justify-content:center;
+  align-content: center;
+  width:100%;
+  bottom:0;
+  height: 10%;
+}
+
+.cursor {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font: 16px;
+  font-weight: 400;
+  
+}
+
+.prev:focus{
+  outline:none;
+}
+.next:focus{
+  outline:none;
+}
+
+.prev {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.next{
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
