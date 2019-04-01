@@ -18,33 +18,33 @@
 
 .Scrollbar {
   display: inline-block;
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 10%;
   transform: translate(-50%, -50%);
 }
 
 .content {
-  display:block;
+  display: block;
   padding: 10px 0px 10px;
   font-size: 18px;
-  background-color:transparent;
-  border:none;
-  color:#C0C0C0;
+  background-color: transparent;
+  border: none;
+  color: #C0C0C0;
 }
 
 .content:hover {
-  color:white;
+  color :white;
   transition: .2s;
 }
 
-button:focus{
-  outline:none;
+button:focus {
+  outline: none;
 }
 
 /* Contents */
 
-.display_wrapper{
+.display_wrapper {
   height: 760px;
   width: 900px;
   position: absolute;
@@ -85,24 +85,24 @@ button:focus{
 .display {
   display: flex;
   flex-direction: column;
-  position:absolute;
-  transition:.4s;
+  position: absolute;
+  transition: .4s;
   transition-timing-function: ease-out;
-  height:100%;
-  width:100%;
+  height: 100%;
+  width: 100%;
   height: 600px;
-  top:12%;
+  top: 12%;
 }
 
 .card {
-  min-height:100%;
+  min-height: 100%;
   margin-bottom: 100px;
-  flex:1;
+  flex: 1;
   border-radius: 10px;
 }
 
 .Projects {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .Skills{
@@ -131,7 +131,7 @@ button:focus{
 }
 
 .NameCard__Container {
-  display:flex;
+  display: flex;
   height: 100%;
   width: 100%;
 }
@@ -152,13 +152,13 @@ button:focus{
   align-self: end;
 }
 
-.ProfilePic{
+.ProfilePic {
   clip-path: circle(80px at center);
   border: 2px solid white;
 }
 
 .AboutMe {
-  color:white;
+  color: white;
   text-align: center;
   padding: 5% 5%;
   font-size: 22px;
@@ -166,17 +166,17 @@ button:focus{
   grid-area: 2/1/5/5;
 }
 /* Skills */
-.row{
+.row {
   top: -5%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   margin: 12%;
 }
 
-.skill_icon{
-  max-height:110px;
-  max-width:120px;
-  flex:1;
+.skill_icon {
+  max-height: 110px;
+  max-width: 120px;
+  flex: 1;
 }
 
 /* Personal */
@@ -187,7 +187,7 @@ button:focus{
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
   align-items: stretch;
-  height:100%;
+  height: 100%;
   border: none;
 }
 
@@ -195,22 +195,22 @@ button:focus{
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
   font-size: 14px;
-  color:white;
+  color: white;
   text-align: center;
-  border:none;
+  border: none;
 }
 
-.grid-item:first-child{
+.grid-item:first-child {
   border-right: 1px solid black;
   border-bottom: 1px solid black;
 }
-
-.grid-item:nth-child(2){
+ 
+.grid-item:nth-child(2) {
   border-left: 1px solid black;
   border-bottom: 1px solid black;
 }
 
-.grid-item:nth-child(3){
+.grid-item:nth-child(3) {
   border-right: 1px solid black;
   border-top: 1px solid black;
 }
@@ -224,17 +224,17 @@ button:focus{
 
 /* Contact */
 
-.contact_title{
+.contact_title { 
   position: relative;
   font-size: 45px;
   letter-spacing: 2px;
   color: white;
-  height:40%;
-  top:20%;
-  text-align:center;
+  height: 40%;
+  top: 20%;
+  text-align: center;
 }
 
-.info{
+.info {
   height: 40vh;
   position: relative;
   top: 18%;
@@ -242,36 +242,36 @@ button:focus{
   background-color: rgb(0,0,0,.8);
 }
 
-.contact_info{
-  text-align:center;
-}
-
-.linkedin{
-  color:white;
-}
-
-.github{
-  color:white;
-}
-
-.contact_email{
-  color:white;
+.contact_info {
   text-align: center;
-  font-size:15px;
+}
+
+.linkedin {
+  color: white;
+}
+
+.github {
+  color: white;
+}
+
+.contact_email {
+  color: white;
+  text-align: center;
+  font-size: 15px;
   top: 100px;
   margin-bottom: 20px;
 }
 
-.contact_icon{
+.contact_icon {
   left: 0 !important;
 }
 
-.button_linkedin{
+.button_linkedin {
   background-color: rgb(65, 123, 247);
   transition: .2s;
 }
 
-.button_github{
+.button_github {
   background-color: rgb(102, 98, 98);
   transition: .2s;
 }
@@ -285,23 +285,12 @@ button:focus{
   transition: .2s;
 }
 
-.redirect{
+.redirect {
   height: 60px;
   width: 250px;
-  position:relative;
+  position: relative;
   border-radius: 15px;
   border: none;
   margin: 20px;
 }
 
-/* .skill_icon:not(:last-child){
-  border-right: 1px solid black;
-} */
-
-
-
-
-/* @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-} */
