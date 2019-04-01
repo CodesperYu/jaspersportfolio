@@ -54,6 +54,34 @@ button:focus{
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 1200px) {
+  .display_wrapper{
+    height: 760px;
+    width: 900px;
+    position: absolute;
+    overflow: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Scrollbar {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+  }  
+}
+
+@media screen and (max-height: 750px) {
+  .App-header{
+    display: none;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, .2);
+  };
+} 
+
+
 .display {
   display: flex;
   flex-direction: column;

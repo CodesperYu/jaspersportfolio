@@ -11,6 +11,7 @@ class Portfolio extends Component {
 		super();
 		this.state = {
 			card: 'Home',
+			lastScrollY: 0,
 			contents: [
 				{
 					name: 'Home',
@@ -41,13 +42,10 @@ class Portfolio extends Component {
 		let content = e.target.value;
 		this.setState({
 			index: content
-		}, () => {
-			console.log(this.state.index)
-		});
+		})
 	}
 
   render() {
-		console.log(this.state);
     return (
 			<div className="Portfolio">
 				<div className="Scrollbar">
