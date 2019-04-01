@@ -11,7 +11,6 @@ class Projects extends Component {
 
 	nextSlide() {
 		let slide = this.state.currSlide
-		console.log(slide);
 		if(slide < 2) {
 			this.setState({currSlide: slide + 1});
 		}
